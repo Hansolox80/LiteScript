@@ -1,48 +1,83 @@
-
 # LiteScript (LS)
 
-**LiteScript (LS)** é uma linguagem de programação amigável para iniciantes, projetada para ser simples e fácil de aprender. Inspirada no Python, LiteScript torna a programação mais acessível, utilizando uma sintaxe em português que até uma criança de 7 anos consegue entender!
+**LiteScript (LS)** é uma linguagem de programação simples e intuitiva, inspirada em Python, mas com sintaxe em português. Projetada para iniciantes, LiteScript facilita o aprendizado de programação ao permitir que conceitos básicos sejam explorados de forma acessível. 
+
+Este projeto inclui um **interpretador em C** que executa arquivos `.lspt` e suporta variáveis, funções, e estruturas de controle como condicionais.
 
 ## Funcionalidades
 
-- **Sintaxe Simples**: Escrito em português, facilitando o aprendizado para iniciantes.
-- **Minimalista**: Focado em conceitos essenciais de programação, sem sobrecarregar quem está começando.
-- **Ambiente Pré-Configurado**: LiteScript já vem com tudo embutido, não é necessário instalar ferramentas ou bibliotecas adicionais.
-- **Extensão de Arquivo**: Utiliza `.lspt` para diferenciar arquivos LiteScript.
+- **Tipos de variáveis**: Suporte para variáveis inteiras, booleanas e strings.
+- **Definição de Funções**: Funções podem ser criadas e chamadas diretamente no código LiteScript.
+- **Controle Condicional**: Suporte para blocos condicionais `se` e `senao`.
+- **Exibição de Valores**: Função `mostre` para exibir variáveis ou strings diretamente no console.
 
-## Por que LiteScript?
+## Exemplo de Código
 
-LiteScript foi criado com o objetivo de tornar a programação acessível para todos, especialmente para crianças e iniciantes. Ao reduzir a complexidade das linguagens tradicionais e usar uma sintaxe em português, permite que qualquer pessoa comece a programar sem conhecimento prévio.
+Aqui está um exemplo básico de código LiteScript:
 
-## Como Começar
-
-1. **Baixe o LiteScript**: Clone ou baixe este repositório.
-2. **Execute Seu Primeiro Script**: Crie um arquivo com a extensão `.lspt`, escreva seu código e rode no interpretador LiteScript.
-3. **Explore**: LiteScript conta com várias funções embutidas que simplificam tarefas comuns.
-
-```python
-# Exemplo de código em LiteScript (LS)
-escreva("Olá, mundo!")
+```lspt
+definir x = 10
+se x
+    mostre "X é verdadeiro"
+senao
+    mostre "X é falso"
+fimse
 ```
 
-## Instalação
+### Saída Esperada
 
-Para instalar o LiteScript, siga os passos abaixo:
-
-```bash
-git clone https://github.com/SeuUsuario/litescript.git
-cd litescript
+```
+X é verdadeiro
 ```
 
-Após o download, execute seu primeiro script:
+## Como Usar
 
-```bash
-python litescript_interpreter.py exemplo.lspt
+1. **Compilar o interpretador**:
+   Para compilar o interpretador, utilize um compilador C. Por exemplo, usando o GCC no terminal:
+
+   ```bash
+   gcc -o litescript_interpreter litescript_interpreter.c
+   ```
+
+2. **Executar um arquivo LiteScript (.lspt)**:
+   Para executar um arquivo `.lspt`, basta fornecer o caminho do arquivo como argumento ao executável.
+
+   ```bash
+   ./litescript_interpreter caminho/do/arquivo.lspt
+   ```
+
+## Estrutura do Código
+
+- **Tipos Suportados**:
+  - `int` (inteiros)
+  - `bool` (booleanos, com valores `verdadeiro` e `falso`)
+  - `string` (cadeias de caracteres)
+
+- **Definição de Funções**:
+  Funções são definidas com a palavra-chave `funcao`, e o código da função é armazenado como uma string. A execução é feita ao chamar o nome da função.
+
+- **Condicionais**:
+  Blocos de código podem ser executados condicionalmente com o comando `se`, seguido de um bloco opcional `senao` para cenários alternativos.
+
+## Exemplo de Definição de Função
+
+```lspt
+funcao saudacao
+    mostre "Olá, Mundo!"
+fimfuncao
+
+saudacao
+```
+
+### Saída:
+
+```
+Olá, Mundo!
 ```
 
 ## Contribuindo
 
-Contribuições da comunidade são bem-vindas! Sinta-se à vontade para enviar pull requests ou abrir issues para relatar bugs e sugerir novas funcionalidades.
+Contribuições são bem-vindas! Se encontrar bugs, ou tiver sugestões de novas funcionalidades, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
 ## Licença
 
