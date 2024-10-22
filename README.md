@@ -51,6 +51,3 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` p
 ---
 
 **SoloDev** – Criador do LiteScript
-```
-
-Esse README é um bom ponto de partida para o repositório do **LiteScript** no GitHub. Ajuste conforme necessário!
