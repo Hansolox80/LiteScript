@@ -1,4 +1,4 @@
-# LiteScript (LS)
+# LiteScript (LS/.lspt)
 
 **LiteScript (LS)** é uma linguagem de programação simples e amigável, com uma sintaxe inspirada no Python, mas adaptada para português, tornando-a fácil de aprender para iniciantes. O objetivo do LiteScript é permitir que novos programadores entrem no mundo da programação de maneira simples e eficiente.
 
@@ -54,3 +54,4 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE par
 ---
 
 SoloDev – Criador do LiteScript
+
