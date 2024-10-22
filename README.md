@@ -65,3 +65,4 @@ Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE par
 ---
 
 SoloDev – Criador do LiteScript
+
