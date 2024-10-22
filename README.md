@@ -36,21 +36,21 @@ se nome
     mostre "Nome está definido!"
 senao
     mostre "Nome não foi encontrado."
-fimse```
+fimse
 
-**Saída Esperada**:
+Saída Esperada:
 
-```Nome está definido!```
+Nome está definido!
 
+Contribuições
 
-# Contribuições
+Contribuições são bem-vindas! Se você encontrar algum problema, ou tiver ideias para novas funcionalidades, fique à vontade para abrir um pull request ou issue no GitHub.
 
-Contribuições são **bem-vindas**! Se você encontrar algum problema, ou tiver ideias para novas funcionalidades, fique à vontade para abrir um pull request ou issue no GitHub.
-
-# Licença
+Licença
 
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE para mais detalhes.
 
 
+---
 
 SoloDev – Criador do LiteScript
