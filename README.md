@@ -36,29 +36,16 @@ se nome
     mostre "Nome está definido!"
 senao
     mostre "Nome não foi encontrado."
-fimse
+fimse```
 
-Saída Esperada:
+**Saída Esperada**:
 
-LiteScript
-Nome está definido!
-
-Como Compilar e Executar
-
-1. Compilar o Interpretador: Para compilar o interpretador, você pode utilizar um compilador C. No Windows, por exemplo, com o MinGW, você pode usar o seguinte comando no terminal:
-
-gcc -o litescript_interpreter src/litescript_interpreter.c
+```Nome está definido!```
 
 
-2. Executar um Arquivo .lspt: Após a compilação, você pode executar arquivos .lspt como argumento:
+# Contribuições
 
-./litescript_interpreter caminho/do/arquivo.lspt
-
-
-
-Contribuições
-
-Contribuições são bem-vindas! Se você encontrar algum problema, ou tiver ideias para novas funcionalidades, fique à vontade para abrir um pull request ou issue no GitHub.
+Contribuições são **bem-vindas**! Se você encontrar algum problema, ou tiver ideias para novas funcionalidades, fique à vontade para abrir um pull request ou issue no GitHub.
 
 # Licença
 
