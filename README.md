@@ -6,7 +6,6 @@
 
 - [Características](#características)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Como Instalar](#como-instalar)
 - [Como Usar](#como-usar)
 - [Exemplo de Código](#exemplo-de-código)
 - [Adicionar LiteScript ao PATH](#adicionar-litescript-ao-path)
