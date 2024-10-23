@@ -1,0 +1,21 @@
+// Definir variáveis
+definir nome = "Maria"
+definir idade = 22
+
+mostre "Nome: " + nome
+mostre "Idade: " + idade
+
+// Condicional simples
+se idade >= 18
+    mostre "Você é maior de idade."
+senao
+    mostre "Você é menor de idade."
+fimse
+
+// Função simples
+funcao cumprimentar
+    mostre "Olá, " + nome + "!"
+fimfuncao
+
+// Chamar a função
+cumprimentar

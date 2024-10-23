@@ -1,0 +1,3 @@
+definir x = 10
+mostre "O valor de x e:"
+mostre x
