@@ -43,7 +43,7 @@ Antes de começar a programar em LiteScript, você precisa instalar o interpreta
 
 1. **Baixe o LiteScript**: Obtenha o interpretador a partir do repositório oficial ou do site do projeto.
 
-2. **Compilação (Opcional)**: Se você baixou o código-fonte, compile-o usando um compilador C compatível.
+2. **Compilação (Opcional)**: Se você baixou apenas o código-fonte, compile-o usando um compilador C compatível.
 
 3. **Configuração do Ambiente**: Adicione o diretório do LiteScript ao seu PATH para facilitar a execução a partir do terminal.
 
