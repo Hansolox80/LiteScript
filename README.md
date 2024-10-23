@@ -1,148 +1,131 @@
 # LiteScript (LS)
 
-**LiteScript (LS)** é uma linguagem de programação simples e intuitiva, com uma sintaxe inspirada no Python e adaptada para português. Ideal para iniciantes, LiteScript torna o aprendizado de programação acessível a todos.
+**LiteScript (LS)** é uma linguagem de programação simples e amigável, com uma sintaxe inspirada no Python, mas adaptada para português, tornando-a fácil de aprender para iniciantes. O objetivo do LiteScript é permitir que novos programadores entrem no mundo da programação de maneira simples e eficiente.
+
+## Sumário
+
+- [Características](#características)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Como Instalar](#como-instalar)
+- [Como Usar](#como-usar)
+- [Exemplo de Código](#exemplo-de-código)
+- [Adicionar LiteScript ao PATH](#adicionar-litescript-ao-path)
+- [Contribuindo](#contribuindo)
+- [Licença](#licença)
+
+## Características
+
+- **Sintaxe Simples**: Escrita em português e projetada para ser fácil de entender.
+- **Operações Básicas**: Suporta variáveis de tipos `int`, `bool` e `string`, além de funções matemáticas simples.
+- **Estruturas Condicionais**: Suporte para `se`, `senao` e `enquanto`, facilitando a execução condicional e laços de repetição.
+- **Funções**: Permite criar e executar funções personalizadas.
+- **Multiplataforma**: Suporte para Windows, Linux e macOS.
+- **Compatível com C**: Estruturado para ser compatível com funcionalidades do C, facilitando o aprendizado de ambas as linguagens.
 
 ## Estrutura do Projeto
 
-O LiteScript já vem pronto para uso, com a seguinte estrutura de pastas:
+Aqui está a estrutura básica do projeto LiteScript:
 
-- **assets/**: Arquivos de suporte, como imagens ou outros recursos.
-- **bin/**: Contém o executável (`LiteScript.exe`) e outros arquivos binários.
-- **src/**: Código-fonte do LiteScript, caso queira explorar ou modificar o interpretador.
-
-## Funcionalidades Principais
-
-- **Variáveis**: Suporte para `int`, `bool` e `string`.
-- **Funções**: Defina e chame suas próprias funções.
-- **Estruturas Condicionais**: Suporte para `se` e `senao` para controlar o fluxo do programa.
-- **Exibição de Mensagens**: Use `mostre` para imprimir texto ou valores no console.
-
----
-
-## Guia Completo de Uso
-
-### 1. Como Executar o LiteScript
-
-O LiteScript já vem com um **executável** que permite rodar seus scripts rapidamente. Siga as etapas abaixo para começar a usar:
-
-1. **Navegue até o diretório `bin/`.**
-2. **Localize o arquivo `LiteScript.exe`.**
-3. **Crie um arquivo `.lspt`** com o código LiteScript que deseja executar. Você pode usar qualquer editor de texto, como o Bloco de Notas, VS Code, ou Sublime Text.
-
-### 2. Criando seu Primeiro Script LiteScript
-
-Crie um arquivo com a extensão `.lspt`. Abaixo está um exemplo simples de script LiteScript:
-
-```lspt
-definir nome = "LiteScript"
-mostre nome
-
-se nome
-    mostre "Nome está definido!"
-senao
-    mostre "Nome não foi encontrado."
-fimse
+```plaintext
+LiteScript/        
+├── assets/        # Imagens e etc...
+├── bin/           # Arquivos binários gerados após compilação
+├── src/           # Código-fonte do interpretador LiteScript
+└── examples/      # Exemplos de código em LiteScript (.lspt)
 ```
 
-Salve este arquivo com um nome de sua escolha, por exemplo: `meu_primeiro_script.lspt`.
+## Como Usar
 
-### 3. Executando seu Script
+Depois de instalar o LiteScript, você pode rodar scripts `.lspt` diretamente no terminal.
 
-Agora, execute o script que você criou. Aqui está como fazer:
+### Executar um arquivo:
 
-1. **Arraste o arquivo `.lspt`** para cima do `LiteScript.exe` ou execute via linha de comando da seguinte forma:
-
-    - Abra o **Prompt de Comando** (no Windows).
-    - Navegue até o diretório `bin/`, onde está o `LiteScript.exe`:
-
-      ```bash
-      cd caminho/para/bin
-      ```
-
-    - Execute o interpretador passando o caminho do arquivo `.lspt`:
-
-      ```bash
-      LiteScript.exe caminho/para/seu_script.lspt
-      ```
-
-    - Por exemplo:
-
-      ```bash
-      LiteScript.exe C:\Users\SeuUsuario\Documentos\meu_primeiro_script.lspt
-      ```
-
-2. O LiteScript vai rodar o script e exibir a saída no console.
-
-### 4. Explorando Mais Funções
-
-Aqui estão mais exemplos de como usar variáveis, funções e condicionais no LiteScript.
-
-#### Definindo Variáveis
-
-```lspt
-definir idade = 25
-definir nome = "João"
-definir ativo = verdadeiro
-
-mostre idade
-mostre nome
-mostre ativo
+```bash
+litescript meu_script.lspt
 ```
 
-#### Funções Simples
+Se você quiser entrar no **modo interativo**, basta executar o interpretador sem fornecer um arquivo:
 
-Você pode definir funções e chamá-las assim:
-
-```lspt
-funcao saudacao
-    mostre "Olá, bem-vindo ao LiteScript!"
-fimfuncao
-
-saudacao
+```bash
+litescript
 ```
 
-#### Controle Condicional
+No modo interativo, você pode digitar comandos diretamente e obter os resultados instantaneamente.
 
-Use condicionais para tomar decisões no seu programa:
+### Exemplo de Código
+
+Aqui está um exemplo básico de código LiteScript:
 
 ```lspt
-definir idade = 18
-
-se idade >= 18
-    mostre "Você é maior de idade."
-senao
-    mostre "Você é menor de idade."
-fimse
+definir x = 10
+mostre "O valor de x e:"
+mostre x
 ```
 
-### 5. Dicas Adicionais
+**Saída esperada**:
 
-- **Erros Comuns**:
-  - **Variável não encontrada**: Verifique a ortografia e se a variável foi definida antes de ser usada.
-  - **Erro de sintaxe**: Certifique-se de que a sintaxe, como a indentação, está correta.
+```plaintext
+O valor de x e:
+10
+```
 
-- **Melhorando Scripts**:
-  - Organize seu código com funções para facilitar a leitura.
-  - Use comentários (`// comentário aqui`) para documentar seu código.
+## Adicionar LiteScript ao PATH
 
----
+Para facilitar o uso do LiteScript a partir de qualquer pasta no seu terminal, você pode adicionar o LiteScript ao seu **PATH**:
 
-## Contribuições
+### No Windows:
 
-Contribuições são **bem-vindas**! Se você encontrar algum problema, ou tiver ideias para novas funcionalidades, fique à vontade para abrir um pull request ou issue no GitHub.
+1. Abra o **Painel de Controle** > **Sistema** > **Configurações Avançadas do Sistema**.
+2. Clique em **Variáveis de Ambiente**.
+3. Encontre a variável **Path**, clique em **Editar**.
+4. Adicione o caminho completo do diretório onde o executável LiteScript está localizado e coloque para cima, como `E:\LiteScript\bin\`.
+
+### No Linux/macOS:
+
+1. Abra o terminal e edite seu arquivo `.bashrc` ou `.zshrc`:
+   ```bash
+   nano ~/.bashrc
+   ```
+   ou
+   ```bash
+   nano ~/.zshrc
+   ```
+
+2. Adicione a seguinte linha ao final do arquivo:
+   ```bash
+   export PATH="$PATH:/caminho/para/litescript/bin"
+   ```
+
+3. Salve o arquivo e recarregue as configurações:
+   ```bash
+   source ~/.bashrc
+   ```
+
+Agora, você poderá executar o LiteScript de qualquer lugar do terminal!
+
+## Contribuindo
+
+Quer contribuir para o LiteScript? Todas as contribuições são bem-vindas!
+
+### Como Contribuir:
+
+1. **Faça um fork** do repositório.
+2. Crie uma **branch** para a nova funcionalidade ou correção de bug:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. **Commit suas mudanças**:
+   ```bash
+   git commit -m "Descrição das mudanças"
+   ```
+4. **Envie um Pull Request**.
+
+Se você encontrar algum bug ou tiver sugestões, sinta-se à vontade para abrir uma **issue** no GitHub.
 
 ## Licença
 
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE.md para mais detalhes.
 
 ---
 
-**SoloDev** – Criador do LiteScript
-
----
-
-### Resumo das Alterações:
-
-1. **Remoção de Instruções de Compilação**: Como o LiteScript será distribuído como um executável, eliminei as instruções sobre compilação.
-2. **Guia Simples de Execução**: Agora o foco é executar o `.exe` com arquivos `.lspt`, seja arrastando o arquivo ou usando o terminal/linha de comando.
-3. **Exemplos Práticos**: Incluí exemplos simples para mostrar como criar variáveis, funções, e usar condicionais no LiteScript.
+**Criado por SoloDev** – Criador do LiteScript
